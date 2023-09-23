@@ -7,7 +7,7 @@ int main(){
 
     int a = 12;
     int *const p = &a;// to define a const pointer we use the const keyword before the '*' sign and can point to non-const objects
-    cout << *p << endl;// This pointer can be used to change the value at the address it is pointing to 
+    cout << *p << endl;// This pointer can be used to change the value at the address it is pointing to and if you try to refer any other variable it will likely to cause an error
 
     const int b = 45;
     const int *const p1 = &b;// This type of const pointer can only point to const type object and like any other const object the value at its address cannot be changed

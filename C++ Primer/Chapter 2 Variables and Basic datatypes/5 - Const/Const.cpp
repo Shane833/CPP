@@ -12,7 +12,7 @@ const int a = 500; // this value cannot be changed
 
 cout << b << endl;
 
-// Const refereces
+// Const references
 //only const type reference can be used to refer to a const object simple references can't be used for this purpose
 
 const int &r = a;

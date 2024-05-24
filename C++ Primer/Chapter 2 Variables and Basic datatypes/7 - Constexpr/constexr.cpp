@@ -15,3 +15,4 @@ int main(){
     // objects defined inside a function dont have a constant memory address
     // However objects defined outside a function have a constant memory address can be used with constexpr
 }
+// So if i try to define a function with a bunch of constexp would it throw an error ?

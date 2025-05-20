@@ -10,4 +10,9 @@ int main(){
     cout << ref << endl;
     // You can never have an empty reference it must be initialized and should be of same datatype at initialization
    
+   int &ref3 = ref; // This also means ref3 refers to a
+   
+   cout << ref3 << endl;
+   
+   int &ref2; // invalid
 }

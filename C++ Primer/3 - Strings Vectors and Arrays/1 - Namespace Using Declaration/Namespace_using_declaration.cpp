@@ -4,6 +4,8 @@ namespace mine{
         std::cout << "Yo this my namespace!!";
     }
     }
+	// using mine::show; // You must specify the using declration for each item you wish 
+						 // to use from the namespace
 int main(){
 
     std::cout << "Yo" << std::endl;// we are using the namespace std and also using the scope operator(::) which find the right hand function inside the scope of the left hand 
@@ -14,4 +16,6 @@ int main(){
 
     // You can even create your own namespace using the namespace keyword like and then same as you define your class or structure
     mine::show();
+	// show(); // after the using delcration you can directly use the item you wish without 
+			   // the scope resolution operator (::)
 }

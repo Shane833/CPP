@@ -1,5 +1,12 @@
 #include <iostream>
 #include <string>
+#include <iterator> // contains the begin and end functions
+
+// Trying if begin and end works on arrays passed into functions
+void displayInt(int arr[]){
+	int * pbeg = std::begin(arr);
+	int * pend = std::end(arr);
+}
 
 int main(int argc,char *argv[])
 {
@@ -50,6 +57,8 @@ int main(int argc,char *argv[])
 		std::cout << *begin << std::endl;
 		begin++;
 	}
+	// Trying my theory
+	// displayInt(ia); won't work
 
 	// POINTER ARITHEMETIC
 	

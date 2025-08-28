@@ -11,6 +11,7 @@ int main()
 	int max_count = 0;
 	int current_count = 0;
 
+	/*
 	// Storing the input first
 	while(std::cin >> in){
 		svec.push_back(in);
@@ -38,6 +39,25 @@ int main()
 
 		beg++;
 	}
+	*/
+	
+	// Alternately without storing the input
+	while(std::cin >> in){
+		// If string matches increment count
+		if(current == in){
+			current_count++;
+		}else{ // else update the current string
+			current = in;
+			current_count = 1; // The word has appeared so its count is 1
+		}
+
+		// Check if the current string has the highest count
+		if(current_count > max_count){
+			max_count = current_count;
+			max = current;
+		}
+	}
+
 
 
 	std::cout << "The word " << max << " appeared " << max_count << " times" << std::endl;

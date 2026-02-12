@@ -44,4 +44,5 @@ int main()
 
    // This would mean that (Alright I'll come back to it later)
    int[3] * ptrs = arr; // is also valid ?? 
+   // NOPE: This is not valid
 }

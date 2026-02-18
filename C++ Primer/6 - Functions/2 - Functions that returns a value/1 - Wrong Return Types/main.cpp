@@ -17,6 +17,6 @@ bool str_subrange(const string &str1, const string &str2)
 	// error #2: control might flow off the end of the function without a return
 	// the compiler might not detect this error
 
-	// So it throws off a warning that control has reached at the end of the function
+	// So it throws off a warning that control has reached at the end of the non-void function
 	// without a return type. (We can handle it by treating warnings as errors)
 }

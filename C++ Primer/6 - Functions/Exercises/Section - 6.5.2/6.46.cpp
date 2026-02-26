@@ -15,7 +15,7 @@ const std::string &isShorter(const std::string &s1, const std::string &s2){
 int main(){
 	
 	//constexpr std::string s = isShorter("Hi", "Hello");
-
+    constexpr std::string f = "Hey there!";
 	std::string s = isShorter("Hi", "Hello"); // This is ok bcz "Hi" and "Hello" are not local objects
 											  // they are declared by the callee hence the temporary
 											  // objects that are bound to them have an lifetime extension
